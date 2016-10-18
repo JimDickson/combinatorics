@@ -1,0 +1,11 @@
+#list all permutations and then remove ones which are not derrangements
+
+from itertools import *
+
+derrangement_array=permutations('12345',5)
+
+for x in derrangement_array:
+  y=0
+  while y<5:
+    if x[y]=y+1  derrangement_array.remove(x)
+    y+=1
